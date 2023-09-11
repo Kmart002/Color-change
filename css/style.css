@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+form{
+    margin-top: 10rem;
+}
+
+input{
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: 15rem;
+    outline: none;
+    
+    font-size: larger;
+}
+
+#modal{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(101, 185, 101, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes modalkeyFrame {
+    form {
+        transform: scale(0);
+    }
+    to {
+        transform: rotate(1);
+    }
+}
+
+#errorMessage{
+    height: 20%;
+    width: 30%;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+#cancel{
+    cursor: pointer;
+    text-align: right;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+#cancel:hover{
+    transform: scale(0.9);
+}
+
+h2{
+    text-align: center;
+    font-style: oblique;
+    color: red;
+}
